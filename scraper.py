@@ -236,7 +236,7 @@ def generar_analysis(productos):
         f.write(f"Precio promedio: ${precio_promedio:.2f}\n")
         f.write("Top 3 productos destacados:\n")
         for p in top3:
-            f.write(f"- {p['nombre']} | {p['rating']}⭐ | {p['reviews']} reviews | ${p['precio']:.2f}\n")
+            f.write(f"- {p['nombre']} | {p['rating']} | {p['reviews']} reviews | ${p['precio']:.2f}\n")
     
     logger.info("Análisis generado en analysis.txt")
 
